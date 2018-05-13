@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>React learning project</title>
     <style>
-        #map {
+        #map-new-jerusalem,
+        #map-mir,
+        #map-uritzkogo {
             width: 100%;
             height: 400px;
             background-color: gray;
         }
     </style>
 </head>
+
 <body>
-    <div id="app">React App</div>
-    <script src="istracoffee.js"></script>
+    <h3>Новый Иерусалим</h3>
+    <p>Тут-бы по-хорошему вписать адрес.</p>
+    <div id="map-new-jerusalem"></div>
+
+    <h3>Мир</h3>
+    <p>Тут-бы по-хорошему вписать адрес.</p>
+    <div id="map-mir"></div>
+
+    <h3>Урицкого</h3>
+    <p>Тут-бы по-хорошему вписать адрес.</p>
+    <div id="map-uritzkogo"></div>
+
+    <script>
+        function initMap() {
+            var uluru_new_jerusalem = { lat: 55.913722, lng: 36.827665 };
+            var uluru_mir = { lat: 55.908068, lng: 36.859983 };
+            var uluru_uritzkogo = { lat: 55.925687, lng: 36.865759 };
+
+            var map_new_jerusalem = new google.maps.Map(document.getElementById('map-new-jerusalem'), {
+                zoom: 16,
+                center: uluru_new_jerusalem
+            });
+            var map_mir = new google.maps.Map(document.getElementById('map-mir'), {
+                zoom: 16,
+                center: uluru_mir
+            });
+            var map_uritzkogo = new google.maps.Map(document.getElementById('map-uritzkogo'), {
+                zoom: 16,
+                center: uluru_uritzkogo
+            });
+
+
+            var marker_new_jerusalem = new google.maps.Marker({
+                position: uluru_new_jerusalem,
+                map: map_new_jerusalem
+            });
+            var marker_mir = new google.maps.Marker({
+                position: uluru_mir,
+                map: map_mir
+            });
+            var marker_uritzkogo = new google.maps.Marker({
+                position: uluru_uritzkogo,
+                map: map_uritzkogo
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBYfo0m9C0JOD7CctIZnMTAmQ75ewTE1Y&callback=initMap">
+    </script>
 </body>
+
 </html>
