@@ -22,7 +22,7 @@ p {
 
 h1 {
   height: 150px;
-  background: url("../images/CS-logo\ \(1\).png") center no-repeat;
+  background: url("./images/CS-logo\ \(1\).png") center no-repeat;
   margin-bottom: 1.5rem;
 }
 h2 {
