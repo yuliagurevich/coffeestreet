@@ -6,5 +6,5 @@ import Locator from './components/Locator';
 
 ReactDOM.render(
   <Locator />,
-  document.getElementById('app')
+  document.getElementById('app'),
 );
