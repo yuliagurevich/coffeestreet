@@ -9,7 +9,6 @@
     <link rel="icon" type="image/png" href="images/CS-logo_32x32.png">
     <title>Coffee-Street в Истре. Кофе с собой.</title>
     <link rel="stylesheet" href="styles.css"></link>
-    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
 </head>
 
 <body>
@@ -540,18 +539,21 @@
             <h3>Урицкого</h3>
             <p class="edit">Добавить адрес, который можно ввести в навигатор, чтобы приехать к торговой точке.</p>
             <div id="map-uritzkogo"></div>
-            
+
             <h2>С нами можно связаться</h2>
             <p>по телефону: +7(903)564-12-52</p>
             <p>или по электронной почте: сoffeeistra@yandex.ru</p>
         </section>
-    </main>
+        <section>
+            <!-- <a href="manager.html">Только для служебного пользования. Посторонним вход воспрещён.</a> -->
+        </section>
+    </main>   
 
     <script>
         function initMap() {
-            var uluru_new_jerusalem = { lat: 55.913722, lng: 36.827665 };
+            var uluru_new_jerusalem = { lat: 55.912630, lng: 36.826469 };
             var uluru_mir = { lat: 55.908068, lng: 36.859983 };
-            var uluru_uritzkogo = { lat: 55.925687, lng: 36.865759 };
+            var uluru_uritzkogo = { lat: 55.925849, lng: 36.865827 };
 
             var map_new_jerusalem = new google.maps.Map(document.getElementById('map-new-jerusalem'), {
                 zoom: 16,
