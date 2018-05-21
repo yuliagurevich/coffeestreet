@@ -18,33 +18,34 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+header {
   margin: 0;
 }
 
 h1 {
-  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 h2 {
-  margin-top: 2rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h4 {
   font-size: 1.4rem;
-  margin-top: 0.5rem;
 }
 
 article {
 }
 
 section+article {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 p {
-  font-size: 1.2rem;
+  text-align: justify;
+  font-size: 1rem;
 }
 
 .coffee-description {
@@ -56,5 +57,20 @@ p {
   grid-gap: 15px;
 }
 
-.swiper-container {
+.volume,
+.price {
+  font-size: 1.2rem;
+  font-weight: bolder
+}
+
+.volume {
+  float: left;
+}
+
+.price {
+  float: right;
+}
+
+.clear {
+  clear: all;
 }
