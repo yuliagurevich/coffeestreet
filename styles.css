@@ -23,11 +23,15 @@ header {
   margin: 0;
 }
 
+header {
+}
+
 h1 {
   text-align: center;
 }
 
 h2 {
+  margin-top: 1.2rem;
   text-transform: uppercase;
   text-align: center;
 }
