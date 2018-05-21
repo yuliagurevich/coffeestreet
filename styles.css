@@ -2,7 +2,7 @@ body {
   width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 #map-new-jerusalem,
@@ -43,6 +43,10 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  margin-top: 0.7rem;
+}
+
 h4 {
   font-size: 1.4rem;
 }
@@ -59,8 +63,13 @@ p {
   font-size: 1rem;
 }
 
-.item-description {
+.item-description,
+.address {
   font-style: italic;
+}
+
+.address {
+  text-align: left;
 }
 
 .container {

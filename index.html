@@ -17,7 +17,7 @@
     <header>
         <h1>Coffee Street</h1>
         <p id="moto">Возьми настроение с собой</p>
-        <!--
+        <!-- Menu
         <nav>
             <ul>
                 <li>
@@ -48,10 +48,13 @@
         </nav>
         -->
     </header>
+
+    <hr>
+    
     <!-- Slider main container -->
     <main class="swiper-container">
         <!-- Additional required wrapper -->
-        <!-- If we need pagination -->
+        <!-- Pagination -->
         <div class="swiper-pagination"></div>
         <section class="swiper-wrapper">
             <!-- Slides -->
@@ -725,25 +728,29 @@
                     <p>30&#x20BD;</p>
                 </article>
             </section>
-
-
         </section>
-        <!-- If we need navigation buttons 
+        
+        <!-- Navigation buttons 
         <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>-->
+        <div class="swiper-button-next"></div>
+        -->
     </main>
+
+    <hr>
+    
+    <!-- Maps and contacts -->
     <section id="maps">
-        <h2>Тут вы можете нас найти</h2>
+        <h2>Нас можно найти</h2>
         <h3>Новый Иерусалим</h3>
-        <p class="edit">Добавить адрес, который можно ввести в навигатор, чтобы приехать к торговой точке.</p>
+        <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Панфилова, 5, павильон "Coffee&nbsp;Street".</p>
         <div id="map-new-jerusalem"></div>
 
-        <h3>Мир</h3>
-        <p class="edit">Добавить адрес, который можно ввести в навигатор, чтобы приехать к торговой точке.</p>
+        <h3>Молодёжный центр "Мир"</h3>
+        <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Ленина, 12, павильон "Coffee&nbsp;Street".</p>
         <div id="map-mir"></div>
 
-        <h3>Урицкого</h3>
-        <p class="edit">Добавить адрес, который можно ввести в навигатор, чтобы приехать к торговой точке.</p>
+        <h3>Улица Урицкого</h3>
+        <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Урицкого, павильон "Coffee&nbsp;Street".</p>
         <div id="map-uritzkogo"></div>
 
         <h2>С нами можно связаться</h2>
@@ -752,11 +759,13 @@
         <p>или по электронной почте:</p>
         <p>сoffeeistra@yandex.ru</p>
     </section>
-
+    
+    <!-- Manager section
     <section>
-        <!-- <a href="manager.html">Только для служебного пользования. Посторонним вход воспрещён.</a> -->
+        <a href="manager.html">Только для служебного пользования. Посторонним вход воспрещён.</a>
     </section>
-
+    -->
+    
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
@@ -779,7 +788,7 @@
             scrollbar: {
                 el: '.swiper-scrollbar',
             },
-        })            
+        });
     </script>
 
     <script>
@@ -816,6 +825,7 @@
             });
         }
     </script>
+
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBYfo0m9C0JOD7CctIZnMTAmQ75ewTE1Y&callback=initMap">
     </script>
 </body>
