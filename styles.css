@@ -91,6 +91,10 @@ p {
   clear: all;
 }
 
+.finisher {
+  height: 30px;
+}
+
 #map-new-jerusalem,
 #map-mir,
 #map-uritzkogo {
