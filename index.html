@@ -9,11 +9,14 @@
     <link rel="icon" type="image/png" href="images/CS-logo_32x32.png">
     <title>Coffee-Street в Истре. Кофе с собой.</title>
     <link rel="stylesheet" href="styles.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.5/css/swiper.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.5/js/swiper.js"></script>
 </head>
 
 <body>
     <header>
         <h1>Coffee Street</h1>
+        <!--
         <nav>
             <ul>
                 <li>
@@ -42,512 +45,548 @@
                 </li>
             </ul>
         </nav>
+        -->
     </header>
-    <main>
-        <section id="classic-coffee" class="container">
-            <header>
-                <h2>кофейная классика</h2>
-            </header>
-            <article>
-                <h4>Эспрессо - 45 мл</h4>
-                <p class="coffee-description">Идеальный купаж Арабики и Робусты, дарит яркий вкус классического напитка, с идеальным балансом сладости
-                    и горечи.</p>
-                <p>60&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Двойной эспрессо - 90 мл</h4>
-                <p class="coffee-description">Больше эсперессо, для тех, кому необходимо взбодриться.</p>
-                <p>120&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Американо - 200/350 мл</h4>
-                <p class="coffee-description">Кофе с мягким, нежным вкусом и насыщенным ароматом.</p>
-                <p>70/130&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Капучино - 300/400 мл</h4>
-                <p class="coffee-description">Классический итальянский напиток с пышной шапкой молочной пены.</p>
-                <p>100/130&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Латте - 300/400 мл</h4>
-                <p class="coffee-description">Мягкий и нежный, слоистый, молочно-кофейный напиток.</p>
-                <p>100/130&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Венский - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>110&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Мокачино - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Глясе - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Раф (ваниль/карамель) - 400 мл</h4>
-                <p class="coffee-description"></p>
-                <p>160&#x20BD;</p>
-            </article>
-            <article id="syrups">
-                <h4>Сиропы в кофе: ваниль, карамель, лесной орех, миндаль, бабл гам, мята, кокос, айриш крем, банан, арахис,
-                    шоколад
-                </h4>
-                <p>20&#x20BD;</p>
-            </article>
+    <!-- Slider main container -->
+    <main class="swiper-container">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <section class="swiper-wrapper">
+            <!-- Slides -->
+            <section id="classic-coffee" class="container swiper-slide">
+                <header>
+                    <h2>кофейная классика</h2>
+                </header>
+                <article>
+                    <h4>Эспрессо</h4>
+                    <p class="coffee-description">Идеальный купаж Арабики и Робусты, дарит яркий вкус классического напитка, с идеальным балансом сладости
+                        и горечи.</p>
+                    <p class="price">45 мл - 60&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Двойной эспрессо</h4>
+                    <p class="coffee-description">Больше эсперессо, для тех, кому необходимо взбодриться.</p>
+                    <p>90 мл - 120&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Американо</h4>
+                    <p class="coffee-description">Кофе с мягким, нежным вкусом и насыщенным ароматом.</p>
+                    <p>200/350 мл - 70/130&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Капучино</h4>
+                    <p class="coffee-description">Классический итальянский напиток с пышной шапкой молочной пены.</p>
+                    <p>300/400 мл - 100/130&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Латте</h4>
+                    <p class="coffee-description">Мягкий и нежный, слоистый, молочно-кофейный напиток.</p>
+                    <p>300/400 мл - 100/130&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Венский</h4>
+                    <p class="coffee-description">Облако взбитых сливок с искорками карамельного сахара, скрывает под собой крепкий и ароматный американо.</p>
+                    <p>300 мл - 110&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Мокачино</h4>
+                    <p class="coffee-description">Шоколадный вкус какао прекрасно оттеняет молочно-кофейный вкус латте. Любимый кофе сладкоежки.</p>
+                    <p>300 мл - 100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Глясе</h4>
+                    <p class="coffee-description">Лёд и пламень! Изысканное сочетание горячего ароматного эспрессо и мягкого тающего мороженого.</p>
+                    <p>300 мл - 100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Раф (ваниль/карамель)</h4>
+                    <p class="coffee-description">Взбитый в мягкую пену воздушный напиток из сливок и эспрессо с карамельным или ванильным вкусом.</p>
+                    <p>400 мл - 160&#x20BD;</p>
+                </article>
+                <article id="syrups">
+                    <h4>Сиропы в кофе: ваниль, карамель, лесной орех, миндаль, бабл гам, мята, кокос, айриш крем, банан, арахис,
+                        шоколад
+                    </h4>
+                    <p>20&#x20BD;</p>
+                </article>
+            </section>
+
+            <section id="special-coffee" class="container swiper-slide">
+                <header>
+                    <h2>такой особенный латте</h2>
+                </header>
+                <article>
+                    <h4>Латте на соевом молоке - 300 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>150&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Латте на безлактозном молоке - 300 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>150&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Бананово-карамельный латте - 300 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>130&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Имбирно-пряничный латте - 300 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>130&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Клубнично-карамельный латте - 300 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>130&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Малиново-карамельный латте - 300 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>130&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Латте Халва - 300 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>130&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Латте Соленая карамель - 300 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>130&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Латте Баунти - 400 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>170&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Латте Сникерс - 400 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>170&#x20BD;</p>
+                </article>
+            </section>
+
+            <section id="tea" class="container swiper-slide">
+                <header>
+                    <h2>чайная карта</h2>
+                </header>
+                <article>
+                    <h4>Ассам Хармутти - 300 мл</h4>
+                    <p class="coffee-description">Классический черный чай Ассам из одноименного индийского штата, плантация Хармутти.</p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Земляника со сливками - 300 мл</h4>
+                    <p class="coffee-description">Черный чай с мягкой земляничной сладостью.</p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Японская Липа</h4>
+                    <p class="coffee-description">Освежающее сочетание зеленого чая Сенча с апельсиновой цедрой, солнечно-желтыми соцветиями ромашки и
+                        душистой липой.
+                    </p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Имбирь-лимон - 300 мл</h4>
+                    <p class="coffee-description">Пикантный имбирь в сочетании с лакрицей, мятой и тонким ароматом лемонграсса.</p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Намасте</h4>
+                    <p class="coffee-description">Согревающий черный чай с кардамоном, мадагаскарской корицей, имбирем, бразильским перцем и гвоздикой.</p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Молочный улун - 300 мл</h4>
+                    <p class="coffee-description">Улун слабой ферментации с ароматом молока.</p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Сенча - 300 мл</h4>
+                    <p class="coffee-description">Мягкий зеленый чай, сделанный по японской тежнологии пропаривания. Аромат Сенчи напоминает свежесть морского
+                        бриза.
+                    </p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Травяной коктейль - 300 мл</h4>
+                    <p class="coffee-description">Травяной микс душистых трав: яблоко, мелисса, ройбуш, лемонграсс, ромашка и лепестки василька. Не содержит
+                        кофеин.
+                    </p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Манго-ананас-чили</h4>
+                    <p class="coffee-description">Пикантный черный чай с тропическими фруктами и острым чили.</p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Кир Роял - 300 мл</h4>
+                    <p class="coffee-description">Яркое душистое фруктово-ягодное сочетание с искристым вкусом знаменитого коктейля.</p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Венский десерт - 300 мл</h4>
+                    <p class="coffee-description">Черный чай с кусочками натурального темного и белого шоколада напоминает вкус знаменитого Венского торта
+                        «Захер».
+                    </p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Ягодный коктейль - 300 мл</h4>
+                    <p class="coffee-description">Выразительный гибискус (каркаде) с бархатным ягодным послевкусием.</p>
+                    <p>50&#x20BD;</p>
+                </article>
+            </section>
+
+            <section id="pastry" class="container swiper-slide">
+                <header>
+                    <h2>кондитерские изделия</h2>
+                </header>
+                <article>
+                    <h4>Донат с ванилью</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Донат с малиной</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Донат с карамелью</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Донат с шоколадом</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Пончик с шоколадом</h4>
+                    <p></p>
+                    <p>35&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Пончик с клубникой</h4>
+                    <p></p>
+                    <p>35&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Пончик с вареной сгущенкой</h4>
+                    <p></p>
+                    <p>35&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Чизкейк Нью-Йорк</h4>
+                    <p></p>
+                    <p>90&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Морковный торт</h4>
+                    <p></p>
+                    <p>120&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Маковый пирог</h4>
+                    <p></p>
+                    <p>95&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Брауни рок слайд</h4>
+                    <p></p>
+                    <p>90&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Маффин шоколадный</h4>
+                    <p></p>
+                    <p>70&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Маффин с черникой</h4>
+                    <p></p>
+                    <p>70&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Макарун</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Профитроли</h4>
+                    <p></p>
+                    <p>10&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Кукис белый</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Кукис шоколадный</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+            </section>
+
+            <section id="hot-beverages" class="container swiper-slide">
+                <header>
+                    <h2>горячие безалкогольные коктейли</h2>
+                </header>
+                <article>
+                    <h4>Глинтвейн - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Сбитень - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Апельсин-имбирь - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Облепиха - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Черная смородина - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Облепиха-имбирь - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Малина-имбирь - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Лимон-имбирь - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Клюква-можжевельник - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Вишня - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Малина - 300мл</h4>
+                    <p></p>
+                    <p>100&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Какао с маршмелоуз - 200/400 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>70/140&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Горячий шоколад - 150 мл</h4>
+                    <p class="coffee-description"></p>
+                    <p>120&#x20BD;</p>
+                </article>
+            </section>
+
+            <section id="cool-beverages" class="container swiper-slide">
+                <header>
+                    <h2>прохладительные напитки</h2>
+                </header>
+                <article>
+                    <h4>Вода - 0,5 л</h4>
+                    <p></p>
+                    <p>30&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Холодный чай «Липтон» - 0,5 л</h4>
+                    <p></p>
+                    <p>60&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Фанта - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Кока Кола - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Спрайт - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Саянская долина - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Апельсин - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Барбарис - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Лимон-лайм - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Тархун - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Сказочный ключик - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Пина-Колада - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Мохито - 0,5 л</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Детский сок «Добрый» в ассортименте - 0,2 л</h4>
+                    <p></p>
+                    <p>30&#x20BD;</p>
+                </article>
+            </section>
+
+            <section id="tourist's-breakfast" class="container swiper-slide">
+                <header>
+                    <h2>завтрак туриста</h2>
+                </header>
+                <article>
+                    <h4>Слойка с сыром и ветчиной</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Слойка с курицей</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Сосиска в тесте</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Беляш</h4>
+                    <p></p>
+                    <p>50&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Чипсы «Лейз» в ассортименте - 80 гр</h4>
+                    <p></p>
+                    <p>55&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Чипсы «Лейз» в ассортименте - 150 гр</h4>
+                    <p></p>
+                    <p>85&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Твикс</h4>
+                    <p></p>
+                    <p>35&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Сникерс</h4>
+                    <p></p>
+                    <p>35&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Баунти</h4>
+                    <p></p>
+                    <p>35&#x20BD;</p>
+                </article>
+                <article>
+                    <h4>Вагон Вилз</h4>
+                    <p></p>
+                    <p>35&#x20BD;</p>
+                </article>
+            </section>
         </section>
+        <!-- If we need navigation buttons 
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>-->
+    </main>
+    <section id="maps">
+        <h2>Тут вы можете нас найти</h2>
+        <h3>Новый Иерусалим</h3>
+        <p class="edit">Добавить адрес, который можно ввести в навигатор, чтобы приехать к торговой точке.</p>
+        <div id="map-new-jerusalem"></div>
 
-        <section id="special-coffee" class="container">
-            <header>
-                <h2>такой особенный латте</h2>
-            </header>
-            <article>
-                <h4>Латте на соевом молоке - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>150&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Латте на безлактозном молоке - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>150&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Бананово-карамельный латте - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>130&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Имбирно-пряничный латте - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>130&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Клубнично-карамельный латте - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>130&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Малиново-карамельный латте - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>130&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Латте Халва - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>130&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Латте Соленая карамель - 300 мл</h4>
-                <p class="coffee-description"></p>
-                <p>130&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Латте Баунти - 400 мл</h4>
-                <p class="coffee-description"></p>
-                <p>170&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Латте Сникерс - 400 мл</h4>
-                <p class="coffee-description"></p>
-                <p>170&#x20BD;</p>
-            </article>
-        </section>
+        <h3>Мир</h3>
+        <p class="edit">Добавить адрес, который можно ввести в навигатор, чтобы приехать к торговой точке.</p>
+        <div id="map-mir"></div>
 
-        <section id="tea" class="container">
-            <header>
-                <h2>чайная карта</h2>
-            </header>
-            <article>
-                <h4>Ассам Хармутти - 300 мл</h4>
-                <p class="coffee-description">Классический черный чай Ассам из одноименного индийского штата, плантация Хармутти.</p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Земляника со сливками - 300 мл</h4>
-                <p class="coffee-description">Черный чай с мягкой земляничной сладостью.</p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Японская Липа</h4>
-                <p class="coffee-description">Освежающее сочетание зеленого чая Сенча с апельсиновой цедрой, солнечно-желтыми соцветиями ромашки и душистой
-                    липой.
-                </p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Имбирь-лимон - 300 мл</h4>
-                <p class="coffee-description">Пикантный имбирь в сочетании с лакрицей, мятой и тонким ароматом лемонграсса.</p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Намасте</h4>
-                <p class="coffee-description">Согревающий черный чай с кардамоном, мадагаскарской корицей, имбирем, бразильским перцем и гвоздикой.</p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Молочный улун - 300 мл</h4>
-                <p class="coffee-description">Улун слабой ферментации с ароматом молока.</p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Сенча - 300 мл</h4>
-                <p class="coffee-description">Мягкий зеленый чай, сделанный по японской тежнологии пропаривания. Аромат Сенчи напоминает свежесть морского
-                    бриза.
-                </p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Травяной коктейль - 300 мл</h4>
-                <p class="coffee-description">Травяной микс душистых трав: яблоко, мелисса, ройбуш, лемонграсс, ромашка и лепестки василька. Не содержит
-                    кофеин.
-                </p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Манго-ананас-чили</h4>
-                <p class="coffee-description">Пикантный черный чай с тропическими фруктами и острым чили.</p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Кир Роял - 300 мл</h4>
-                <p class="coffee-description">Яркое душистое фруктово-ягодное сочетание с искристым вкусом знаменитого коктейля.</p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Венский десерт - 300 мл</h4>
-                <p class="coffee-description">Черный чай с кусочками натурального темного и белого шоколада напоминает вкус знаменитого Венского торта
-                    «Захер».
-                </p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Ягодный коктейль - 300 мл</h4>
-                <p class="coffee-description">Выразительный гибискус (каркаде) с бархатным ягодным послевкусием.</p>
-                <p>50&#x20BD;</p>
-            </article>
-        </section>
+        <h3>Урицкого</h3>
+        <p class="edit">Добавить адрес, который можно ввести в навигатор, чтобы приехать к торговой точке.</p>
+        <div id="map-uritzkogo"></div>
 
-        <section id="pastry" class="container">
-            <header>
-                <h2>кондитерские изделия</h2>
-            </header>
-            <article>
-                <h4>Донат с ванилью</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Донат с малиной</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Донат с карамелью</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Донат с шоколадом</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Пончик с шоколадом</h4>
-                <p></p>
-                <p>35&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Пончик с клубникой</h4>
-                <p></p>
-                <p>35&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Пончик с вареной сгущенкой</h4>
-                <p></p>
-                <p>35&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Чизкейк Нью-Йорк</h4>
-                <p></p>
-                <p>90&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Морковный торт</h4>
-                <p></p>
-                <p>120&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Маковый пирог</h4>
-                <p></p>
-                <p>95&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Брауни рок слайд</h4>
-                <p></p>
-                <p>90&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Маффин шоколадный</h4>
-                <p></p>
-                <p>70&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Маффин с черникой</h4>
-                <p></p>
-                <p>70&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Макарун</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Профитроли</h4>
-                <p></p>
-                <p>10&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Кукис белый</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Кукис шоколадный</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-        </section>
+        <h2>С нами можно связаться</h2>
+        <p>по телефону: +7(903)564-12-52</p>
+        <p>или по электронной почте: сoffeeistra@yandex.ru</p>
+    </section>
 
-        <section id="hot-beverages" class="container">
-            <header>
-                <h2>горячие безалкогольные коктейли</h2>
-            </header>
-            <article>
-                <h4>Глинтвейн - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Сбитень - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Апельсин-имбирь - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Облепиха - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Черная смородина - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Облепиха-имбирь - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Малина-имбирь - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Лимон-имбирь - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Клюква-можжевельник - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Вишня - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Малина - 300мл</h4>
-                <p></p>
-                <p>100&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Какао с маршмелоуз - 200/400 мл</h4>
-                <p class="coffee-description"></p>
-                <p>70/140&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Горячий шоколад - 150 мл</h4>
-                <p class="coffee-description"></p>
-                <p>120&#x20BD;</p>
-            </article>
-        </section>
+    <section>
+        <!-- <a href="manager.html">Только для служебного пользования. Посторонним вход воспрещён.</a> -->
+    </section>
 
-        <section id="cool-beverages" class="container">
-            <header>
-                <h2>прохладительные напитки</h2>
-            </header>
-            <article>
-                <h4>Вода - 0,5 л</h4>
-                <p></p>
-                <p>30&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Холодный чай «Липтон» - 0,5 л</h4>
-                <p></p>
-                <p>60&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Фанта - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Кока Кола - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Спрайт - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Саянская долина - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Апельсин - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Барбарис - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Лимон-лайм - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Тархун - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Сказочный ключик - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Пина-Колада - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Мохито - 0,5 л</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Детский сок «Добрый» в ассортименте - 0,2 л</h4>
-                <p></p>
-                <p>30&#x20BD;</p>
-            </article>
-        </section>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            autoHeight: true,
 
-        <section id="tourist's-breakfast" class="container">
-            <header>
-                <h2>завтрак туриста</h2>
-            </header>
-            <article>
-                <h4>Слойка с сыром и ветчиной</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Слойка с курицей</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Сосиска в тесте</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Беляш</h4>
-                <p></p>
-                <p>50&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Чипсы «Лейз» в ассортименте - 80 гр</h4>
-                <p></p>
-                <p>55&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Чипсы «Лейз» в ассортименте - 150 гр</h4>
-                <p></p>
-                <p>85&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Твикс</h4>
-                <p></p>
-                <p>35&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Сникерс</h4>
-                <p></p>
-                <p>35&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Баунти</h4>
-                <p></p>
-                <p>35&#x20BD;</p>
-            </article>
-            <article>
-                <h4>Вагон Вилз</h4>
-                <p></p>
-                <p>35&#x20BD;</p>
-            </article>
-        </section>
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
 
-        <section id="maps">
-            <h2>Тут вы можете нас найти</h2>
-            <h3>Новый Иерусалим</h3>
-            <p class="edit">Добавить адрес, который можно ввести в навигатор, чтобы приехать к торговой точке.</p>
-            <div id="map-new-jerusalem"></div>
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
 
-            <h3>Мир</h3>
-            <p class="edit">Добавить адрес, который можно ввести в навигатор, чтобы приехать к торговой точке.</p>
-            <div id="map-mir"></div>
-
-            <h3>Урицкого</h3>
-            <p class="edit">Добавить адрес, который можно ввести в навигатор, чтобы приехать к торговой точке.</p>
-            <div id="map-uritzkogo"></div>
-
-            <h2>С нами можно связаться</h2>
-            <p>по телефону: +7(903)564-12-52</p>
-            <p>или по электронной почте: сoffeeistra@yandex.ru</p>
-        </section>
-        <section>
-            <!-- <a href="manager.html">Только для служебного пользования. Посторонним вход воспрещён.</a> -->
-        </section>
-    </main>   
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })            
+    </script>
 
     <script>
         function initMap() {
