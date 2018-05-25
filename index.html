@@ -52,14 +52,14 @@
     <hr>
 
     <section class="banner">
-        <!-- <a href="#cool-coffee"> -->
+        <a href="#slide2">
             <article>
                 <h3>Попробуйте наши новинки из летнего меню:</h3>
                 <p class="">Сергиев-Посадский&nbsp;квас,
                     <br>освежающий лимонад
                     <br>и летние кофейные коктейли</p>
             </article>
-        <!-- </a> -->
+        </a>
     </section>
 
     <hr>
@@ -69,7 +69,7 @@
         <!-- Additional required wrapper -->
         <section class="swiper-wrapper">
             <!-- Slides -->
-            <section id="classic-coffee" class="container swiper-slide">
+            <section id="classic-coffee" class="container swiper-slide" data-hash="slide1">
                 <header>
                     <h2>кофейная классика</h2>
                 </header>
@@ -177,9 +177,11 @@
                 <article class="finisher"></article>
             </section>
 
-            <section id="cool-coffee" class="container swiper-slide">
+            <section id="cool-coffee" class="container swiper-slide" data-hash="slide2">
                 <header>
-                    <h2>летнее меню <sup class="new">Новинка!</sup></h2>
+                    <h2>летнее меню
+                        <sup class="new">Новинка!</sup>
+                    </h2>
                 </header>
                 <article>
                     <h3>Квас</h3>
@@ -257,7 +259,7 @@
                 <article class="finisher"></article>
             </section>
 
-            <section id="special-coffee" class="container swiper-slide">
+            <section id="special-coffee" class="container swiper-slide" data-hash="slide3">
                 <header>
                     <h2>такой особенный латте</h2>
                 </header>
@@ -354,7 +356,7 @@
                 <article class="finisher"></article>
             </section>
 
-            <section id="tea" class="container swiper-slide">
+            <section id="tea" class="container swiper-slide" data-hash="slide4">
                 <header>
                     <h2>чайная карта</h2>
                 </header>
@@ -477,7 +479,7 @@
                 <article class="finisher"></article>
             </section>
 
-            <section id="hot-beverages" class="container swiper-slide">
+            <section id="hot-beverages" class="container swiper-slide" data-hash="slide5">
                 <header>
                     <h2>горячие безалкогольные коктейли</h2>
                 </header>
@@ -601,7 +603,7 @@
                 <article class="finisher"></article>
             </section>
 
-            <section id="pastry" class="container swiper-slide">
+            <section id="pastry" class="container swiper-slide" data-hash="slide6">
                 <header>
                     <h2>кондитерские изделия</h2>
                 </header>
@@ -693,7 +695,7 @@
                 <article class="finisher"></article>
             </section>
 
-            <section id="tourist's-breakfast" class="container swiper-slide">
+            <section id="tourist's-breakfast" class="container swiper-slide" data-hash="slide7">
                 <header>
                     <h2>завтрак туриста</h2>
                 </header>
@@ -750,7 +752,7 @@
                 <article class="finisher"></article>
             </section>
 
-            <section id="cool-beverages" class="container swiper-slide">
+            <section id="cool-beverages" class="container swiper-slide" data-hash="slide8">
                 <header>
                     <h2>прохладительные напитки</h2>
                 </header>
@@ -942,6 +944,7 @@
         var mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
             direction: 'horizontal',
+            spaceBetween: 30,
             loop: true,
             autoHeight: true,
 
@@ -956,6 +959,11 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+            },
+            // Enable hash navigation
+            hashNavigation: {
+                //replaceState: true,
+                watchState: true,
             },
 
             // And if we need scrollbar
