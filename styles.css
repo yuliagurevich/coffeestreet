@@ -92,6 +92,10 @@ p {
   float: right;
 }
 
+.new {
+  text-transform: none;
+}
+
 .clear {
   clear: all;
 }
