@@ -31,7 +31,7 @@ div {
 }
 
 h1 {
-  margin: 0 0 0 0;
+  margin: 10px 0 0 0;
   padding: 0 0 0 0;
   text-align: center;
   font-size: 2rem;
@@ -66,6 +66,12 @@ p {
 
 .address {
   text-align: left;
+}
+
+.banner {
+  padding: 5px 10px 5px 10px;
+  margin: 15px 0 15px 0;
+  border: 1px dashed black;
 }
 
 .container {
