@@ -10,7 +10,7 @@ body {
   background-repeat: repeat;
   margin: 0 auto;
   padding: 0 0 0 0;
-  /* color: rgba(248, 248, 242, 1.0); */
+  color: rgba(248, 248, 242, 1.0);
 }
 
 header {
@@ -72,13 +72,17 @@ li {
 }
 
 a {
-  /* color: rgba(248, 248, 242, 1.0); */
+  color: rgba(248, 248, 242, 1.0);
 }
 
 p {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   font-size: 1rem;
+}
+
+.fa-ruble-sign {
+  font-size: 0.9rem;
 }
 
 .item-description,
@@ -89,13 +93,13 @@ p {
 
 .banner {
   padding: 5px 10px 5px 10px;
-  margin: 0 0 15px 0;
+  margin: 10px 0 15px 0;
   text-align: center;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(0,0,0,0.7);
 }
 
 .swiper-slide {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(0,0,0,0.7);
 }
 
 .menu-header {
@@ -157,7 +161,7 @@ p {
   font-style: italic;
 }
 
-#cool-coffee {
+/* #cool-coffee {
   background-color: rgba(0, 0, 0, 0.6);
   color: rgba(248, 248, 242, 1.0); 
-}
+} */
