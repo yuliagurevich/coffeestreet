@@ -4,9 +4,9 @@
 
 body {
   width: 90%;
-  background-image: url("./images/vectorstock_7478497.jpg");
+  background-image: url("./images/bg-coffee-image-100.svg");
   background-attachment: fixed;
-  background-size: 150px;
+  /* background-size: 100px; */
   background-repeat: repeat;
   margin: 0 auto;
   padding: 0 0 0 0;
@@ -92,6 +92,7 @@ p {
 
 
 .banner {
+  min-height: 100px;
   padding: 5px 10px 5px 10px;
   margin: 10px 0 15px 0;
   text-align: center;
