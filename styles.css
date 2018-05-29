@@ -1,8 +1,15 @@
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   width: 90%;
+  background-image: url("./images/vectorstock_7478497.jpg");
+  background-size: 150px;
+  background-repeat: repeat;
   margin: 0 auto;
   padding: 0 0 0 0;
+  /* color: rgba(248, 248, 242, 1.0); */
 }
 
 header {
@@ -38,7 +45,7 @@ h1 {
 }
 
 h2 {
-  margin: 10px 0 0 0;
+  margin: 0 0 0 0;
   padding: 0 0 0 0;
   text-transform: uppercase;
   text-align: center;
@@ -52,10 +59,24 @@ h3 {
   font-size: 1.2rem;
 }
 
+ul {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+
+a {
+  /* color: rgba(248, 248, 242, 1.0); */
+}
+
 p {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-  text-align: justify;
   font-size: 1rem;
 }
 
@@ -64,19 +85,35 @@ p {
   font-style: italic;
 }
 
-.address {
-  text-align: left;
-}
 
 .banner {
   padding: 5px 10px 5px 10px;
-  margin: 15px 0 15px 0;
-  border: 1px dashed black;
+  margin: 0 0 15px 0;
+  text-align: center;
+  background-color: rgba(255,255,255,0.8);
 }
 
-.container {
+.swiper-slide {
+  background-color: rgba(255,255,255,0.8);
+}
+
+.menu-header {
+  margin: 0 0 0 0;
+  padding: 10px 0 10px 0;
+  width: 100%;
+}
+
+.menu-container {
   display: grid;
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 10px 30px;
+  padding: 0 10px 0 10px;
+}
+
+.menu-footer {
+  height: 30px;
+  margin: 0 0 10px 0;
 }
 
 .volume,
@@ -100,10 +137,6 @@ p {
   clear: all;
 }
 
-.finisher {
-  height: 30px;
-}
-
 #map-new-jerusalem,
 #map-mir,
 #map-uritzkogo {
@@ -113,8 +146,17 @@ p {
   box-shadow: 0 2px 5px 0 rgba(160,160,160,0.6);
 }
 
+.address {
+  text-align: left;
+}
+
 #moto {
   text-align: center;
   font-size: 1rem;
   font-style: italic;
+}
+
+#cool-coffee {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(248, 248, 242, 1.0); 
 }
