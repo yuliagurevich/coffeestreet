@@ -71,6 +71,10 @@ ul li {
   padding: 0 10px 0 10px;
 }
 
+ol {
+  padding: 0 0 0 15px;
+}
+
 a {
   color: rgba(248, 248, 242, 1.0);
 }
@@ -92,11 +96,16 @@ p {
 
 
 .banner {
-  min-height: 100px;
-  padding: 5px 10px 5px 10px;
+  /* min-height: 105px; */
+  padding: 0 0 0 0;
   margin: 10px 0 15px 0;
   text-align: center;
-  background-color: rgba(0,0,0,0.7);
+  /* background-color: rgba(0,0,0,0.7); */
+}
+
+.news {
+  min-height: 100px;
+  padding: 10px 10px 10px 10px;
 }
 
 .swiper-slide {

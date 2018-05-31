@@ -8,11 +8,11 @@
     <meta http-equiv="Cache-Control" content="private">
     <link rel="icon" type="image/png" href="images/CS-logo_32x32.png">
     <title>Coffee-Street в Истре. Кофе с собой.</title>
-    <link rel="stylesheet" href="styles.css"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.5/css/swiper.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.5/js/swiper.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"></link>
 </head>
 
 <body>
@@ -51,19 +51,28 @@
         -->
     </header>
 
-    <section class="banner">
-        <a href="#slide2">
-            <article>
-                <h3>Попробуйте наши новинки из летнего меню!</h3>
-                <ul class="">
-                    <li>Сергиев-Посадский&nbsp;квас</li><li>Освежающий лимонад</li><li>Летние кофейные коктейли</li>
-                </ul>
+    <section class="banner swiper-container">
+        <section class="swiper-wrapper">
+            <article class="news swiper-slide">
+                <a href="#slide2">
+                    <h3>Попробуйте наши новинки из летнего меню!</h3>
+                    <ul>
+                        <li>Сергиев-Посадский&nbsp;квас</li><li>Освежающий лимонад</li><li>Летние кофейные коктейли</li>
+                    </ul>
+                </a>
             </article>
-        </a>
+            <article class="news swiper-slide">
+                <a href="#maps">
+                    <h3>Мы открылись!</h3>
+                    <p>Новый павильон "Coffee Street" ждёт Вас у железнодорожной станции "Истра". По пути на работу не забудьте
+                        взять настроение с собой!</p>
+                </a>
+            </article>
+        </section>
     </section>
 
     <!-- Slider main container -->
-    <main class="swiper-container">
+    <main class="menu swiper-container">
         <!-- Additional required wrapper -->
         <section class="swiper-wrapper">
             <!-- Slides -->
@@ -1139,18 +1148,22 @@
         <p>сoffeeistra@yandex.ru</p>
     </section>
 
-    <!-- Manager section
-    <section>
-        <a href="manager.html">Только для служебного пользования. Посторонним вход воспрещён.</a>
-    </section>
-    -->
-
     <footer>
         <p>Последнее обновление 31 мая 2018 года.</p>
     </footer>
 
     <script>
-        var mySwiper = new Swiper('.swiper-container', {
+        var bannerSwiper = new Swiper('.banner', {
+            direction: 'horizontal',
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+
+        var mySwiper = new Swiper('.menu', {
             // Optional parameters
             direction: 'horizontal',
             spaceBetween: 30,
@@ -1161,7 +1174,6 @@
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
-
             },
 
             // Navigation arrows
@@ -1178,7 +1190,6 @@
             // And if we need scrollbar
             scrollbar: {
                 el: '.swiper-scrollbar',
-
             },
         });
     </script>
@@ -1188,7 +1199,7 @@
             var uluru_new_jerusalem = { lat: 55.912630, lng: 36.826469 };
             var uluru_mir = { lat: 55.908068, lng: 36.859983 };
             var uluru_uritzkogo = { lat: 55.925849, lng: 36.865827 };
-            var uluru_yubileynaya = { lat: 55.903805, lng: 36.858951 };        
+            var uluru_yubileynaya = { lat: 55.903805, lng: 36.858951 };
 
             var map_istra = new google.maps.Map(document.getElementById('map-istra'), {
                 zoom: 12.5,
@@ -1273,7 +1284,7 @@
                         elementType: 'labels.text.stroke',
                         stylers: [{ color: '#17263c' }]
                     }
-                ]               
+                ]
             });
 
             var marker_new_jerusalem = new google.maps.Marker({
