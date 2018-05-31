@@ -66,7 +66,7 @@ ul {
   list-style-type: none;
 }
 
-li {
+ul li {
   display: inline-block;
   padding: 0 10px 0 10px;
 }
@@ -144,6 +144,7 @@ p {
 }
 
 #map-new-jerusalem,
+#map-istra,
 #map-mir,
 #map-uritzkogo {
   width: 100%;

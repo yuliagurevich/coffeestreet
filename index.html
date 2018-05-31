@@ -56,9 +56,7 @@
             <article>
                 <h3>Попробуйте наши новинки из летнего меню!</h3>
                 <ul class="">
-                    <li>Сергиев-Посадский&nbsp;квас</li>
-                    <li>Освежающий лимонад</li>
-                    <li>Летние кофейные коктейли</li>
+                    <li>Сергиев-Посадский&nbsp;квас</li><li>Освежающий лимонад</li><li>Летние кофейные коктейли</li>
                 </ul>
             </article>
         </a>
@@ -1100,25 +1098,30 @@
     </main>
 
     <!-- Maps -->
-    <section id="maps" class="container">
+    <section id="maps">
         <header>
             <h2>Нас можно найти</h2>
         </header>
-
         <article>
-            <h3>Новый Иерусалим</h3>
-            <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Панфилова, 5, павильон "Coffee&nbsp;Street".</p>
-            <div id="map-new-jerusalem"></div>
-        </article>
-        <article>
-            <h3>Молодёжный центр "Мир"</h3>
-            <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Ленина, 12, павильон "Coffee&nbsp;Street".</p>
-            <div id="map-mir"></div>
-        </article>
-        <article>
-            <h3>Улица Урицкого</h3>
-            <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Урицкого, павильон "Coffee&nbsp;Street".</p>
-            <div id="map-uritzkogo"></div>
+            <div id="map-istra"></div>
+            <ol>
+                <li>
+                    <h3>Новый Иерусалим</h3>
+                    <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Панфилова, 5, павильон "Coffee&nbsp;Street".</p>
+                </li>
+                <li>
+                    <h3>Молодёжный центр "Мир"</h3>
+                    <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Ленина, 12, павильон "Coffee&nbsp;Street".</p>
+                </li>
+                <li>
+                    <h3>Улица Урицкого</h3>
+                    <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Урицкого, павильон "Coffee&nbsp;Street".</p>
+                </li>
+                <li>
+                    <h3>Улица Юбилейная</h3>
+                    <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Юбилейная, 2, павильон "Coffee&nbsp;Street".</p>
+                </li>
+            </ol>
         </article>
 
     </section>
@@ -1143,7 +1146,7 @@
     -->
 
     <footer>
-        <p>Последнее обновление 29 мая 2018 года.</p>
+        <p>Последнее обновление 31 мая 2018 года.</p>
     </footer>
 
     <script>
@@ -1185,10 +1188,12 @@
             var uluru_new_jerusalem = { lat: 55.912630, lng: 36.826469 };
             var uluru_mir = { lat: 55.908068, lng: 36.859983 };
             var uluru_uritzkogo = { lat: 55.925849, lng: 36.865827 };
+            var uluru_yubileynaya = { lat: 55.903805, lng: 36.858951 };        
 
-            var map_new_jerusalem = new google.maps.Map(document.getElementById('map-new-jerusalem'), {
-                zoom: 16,
-                center: uluru_new_jerusalem,
+            var map_istra = new google.maps.Map(document.getElementById('map-istra'), {
+                zoom: 12.5,
+                center: { lat: 55.921768, lng: 36.843899 },
+                disableDefaultUI: true,
                 styles: [
                     { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
                     { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
@@ -1268,189 +1273,28 @@
                         elementType: 'labels.text.stroke',
                         stylers: [{ color: '#17263c' }]
                     }
-                ]
+                ]               
             });
-            var map_mir = new google.maps.Map(document.getElementById('map-mir'), {
-                zoom: 16,
-                center: uluru_mir,
-                styles: [
-                    { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
-                    { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
-                    { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
-                    {
-                        featureType: 'administrative.locality',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#d59563' }]
-                    },
-                    {
-                        featureType: 'poi',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#d59563' }]
-                    },
-                    {
-                        featureType: 'poi.park',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#263c3f' }]
-                    },
-                    {
-                        featureType: 'poi.park',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#6b9a76' }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#38414e' }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'geometry.stroke',
-                        stylers: [{ color: '#212a37' }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#9ca5b3' }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#746855' }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'geometry.stroke',
-                        stylers: [{ color: '#1f2835' }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#f3d19c' }]
-                    },
-                    {
-                        featureType: 'transit',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#2f3948' }]
-                    },
-                    {
-                        featureType: 'transit.station',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#d59563' }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#17263c' }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#515c6d' }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'labels.text.stroke',
-                        stylers: [{ color: '#17263c' }]
-                    }
-                ]
-            });
-            var map_uritzkogo = new google.maps.Map(document.getElementById('map-uritzkogo'), {
-                zoom: 16,
-                center: uluru_uritzkogo,
-                styles: [
-                    { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
-                    { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
-                    { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
-                    {
-                        featureType: 'administrative.locality',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#d59563' }]
-                    },
-                    {
-                        featureType: 'poi',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#d59563' }]
-                    },
-                    {
-                        featureType: 'poi.park',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#263c3f' }]
-                    },
-                    {
-                        featureType: 'poi.park',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#6b9a76' }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#38414e' }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'geometry.stroke',
-                        stylers: [{ color: '#212a37' }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#9ca5b3' }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#746855' }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'geometry.stroke',
-                        stylers: [{ color: '#1f2835' }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#f3d19c' }]
-                    },
-                    {
-                        featureType: 'transit',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#2f3948' }]
-                    },
-                    {
-                        featureType: 'transit.station',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#d59563' }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#17263c' }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#515c6d' }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'labels.text.stroke',
-                        stylers: [{ color: '#17263c' }]
-                    }
-                ]
-            });
-
 
             var marker_new_jerusalem = new google.maps.Marker({
                 position: uluru_new_jerusalem,
-                map: map_new_jerusalem
+                label: "1",
+                map: map_istra
             });
             var marker_mir = new google.maps.Marker({
                 position: uluru_mir,
-                map: map_mir
+                label: "2",
+                map: map_istra
             });
             var marker_uritzkogo = new google.maps.Marker({
                 position: uluru_uritzkogo,
-                map: map_uritzkogo
+                label: "3",
+                map: map_istra
+            });
+            var marker_yubileynaya = new google.maps.Marker({
+                position: uluru_yubileynaya,
+                label: "4",
+                map: map_istra
             });
         }
     </script>
