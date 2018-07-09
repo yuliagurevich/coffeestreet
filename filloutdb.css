@@ -1,0 +1,42 @@
+body {
+  width: 70%;
+  margin: 20px auto;
+}
+
+input,
+label {
+  display: block;
+}
+
+h2 {
+  margin: 20px 0 5px 0;
+  font-family: Calibri;
+}
+
+#input,
+#output {
+  font-size: 1.4rem;
+  font-family: Calibri;
+  padding: 10px 10px 10px 10px;
+  margin: 0 0 0 0;
+  border: 1px solid black;
+}
+
+label {
+  margin: 15px 0 0 0;
+  font-size: 1.2rem;
+  font-family: Calibri;
+  line-height: 120%;
+}
+
+input,
+select {
+  font-size: 1.2rem;
+  font-family: Calibri;
+}
+
+#submit,
+#skip {
+  margin: 30px auto;
+  width: 70px;
+}

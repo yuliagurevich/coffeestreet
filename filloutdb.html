@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="filloutdb.css">
+</head>
+
+<body>
+  <p id="remainder"></p>
+  <div id="inputs">
+    <h2>Товар для ввода в систему:</h2>
+    <p id="input"></p>
+      <label for="type">Тип продукта:</label>
+      <input id="type" type="text" placeholder="сок">
+      <label for="brand">Название продукта (бренд):</label>
+      <input id="brand" type="text" placeholder="добрый">
+      <label for="misc">Дополнительная информация о продукте, отличительные признаки:</label>
+      <input id="misc" type="text" placeholder="вишнёвый">
+      <label for="unit">Единицы измерения, в которых измеряется количество продукта в единице продукта:</label>
+      <select id="unit" type="text">
+        <option value="мл">миллилитры</option>
+        <option value="л">литры</option>
+        <option value="гр">граммы</option>
+        <option value="кг">килограммы</option>
+        <option value="шт">штуки</option>
+      </select>
+      <label for="size">Количество продукта:</label>
+      <input id="size" type="number" min="0" placeholder="200">
+
+      <h2>Ваш товар будет отображаться в системе как:</h2>
+      <p id="output"></p>
+      <input id="submit" type="submit" value="Submit">
+      <input id="skip" type="button" value="Skip">
+  </div>
+  <script src="filloutdb.js"></script>
+</body>
+
+</html>
