@@ -31,7 +31,7 @@ sizeInput.addEventListener("input", outputParagraphUpdate);
 unitInput.addEventListener("input", outputParagraphUpdate);
 
 function getArray(error, result) {
-  fetch("outlay.json")
+  fetch("http://coffeestreet.ru/outlay.json")
     .then(function(response) {
       return response.json();
     })
