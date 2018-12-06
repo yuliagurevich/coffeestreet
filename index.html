@@ -20,7 +20,7 @@
     <header>
         <!--<h1>Coffee Street</h1>-->
         <img style="display: block; width: 100%; max-width: 600px; margin: 0 auto;" src="images/CS-logo.svg" alt="Coffee Street logo">
-        <p id="moto">Возьми настроение с собой</p>
+        <p id="moto">Возьми настроение с собой!</p>
         <!-- Menu
         <nav>
             <ul>
@@ -1170,8 +1170,12 @@
                     <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Урицкого, павильон "Coffee&nbsp;Street".</p>
                 </li>
                 <li>
-                    <h3>Улица Юбилейная</h3>
+                    <h3>Станция Истра</h3>
                     <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;Юбилейная, 2, павильон "Coffee&nbsp;Street".</p>
+                </li>
+                <li>
+                    <h3>Улица 9-ой Гвардейской дивизии</h3>
+                    <p class="address">Московская область, г.&nbsp;Истра, ул.&nbsp;9-ой Гвардейской дивизии, 53, Кофейня "Coffee&nbsp;Street".</p>
                 </li>
             </ol>
         </article>
@@ -1192,7 +1196,7 @@
     </section>
 
     <footer>
-        <p>Последнее обновление 1 июня 2018 года.</p>
+        <p>Последнее обновление 1 декабря 2018 года.</p>
     </footer>
 
     <script>
@@ -1243,6 +1247,7 @@
             var uluru_mir = { lat: 55.908068, lng: 36.859983 };
             var uluru_uritzkogo = { lat: 55.925849, lng: 36.865827 };
             var uluru_yubileynaya = { lat: 55.903805, lng: 36.858951 };
+            var uluru_gvardeyka = { lat: 55.911060, lng: 36.873549 };
 
             var map_istra = new google.maps.Map(document.getElementById('map-istra'), {
                 zoom: 12.5,
@@ -1348,6 +1353,11 @@
             var marker_yubileynaya = new google.maps.Marker({
                 position: uluru_yubileynaya,
                 label: "4",
+                map: map_istra
+            });
+            var marker_gvardeyka = new google.maps.Marker({
+                position: uluru_gvardeyka,
+                label: "5",
                 map: map_istra
             });
         }
